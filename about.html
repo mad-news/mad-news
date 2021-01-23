@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script type="text/javascript">
+
+	function js_method_hide() {
+		document.getElementById("img_group2").style.display='none';
+	}
+	
+	function js_method_show() {
+		document.getElementById("img_group2").style.display='inline';
+	}
+	
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="MADNEWS">
@@ -122,13 +134,13 @@
                         <div class="about-tab-area">
                             <ul class="nav nav-tabs mb-50" id="mona_modelTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="tab1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">概况 Intro</a>
+                                    <a class="nav-link active" id="tab1" data-toggle="tab" href="#tab-1" onclick="js_method_show()" role="tab" aria-controls="tab-1" aria-selected="true">概况 Intro</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="tab2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">历史 History</a>
+                                    <a class="nav-link" id="tab2" data-toggle="tab" href="#tab-2" onclick="js_method_show()" role="tab" aria-controls="tab-2" aria-selected="false">历史 History</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="tab3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">社长寄语 Message</a>
+                                    <a class="nav-link" id="tab3" data-toggle="tab" href="#tab-3" onclick="js_method_hide()" role="tab" aria-controls="tab-3" aria-selected="false">社长寄语 Message</a>
                                 </li>
                             </ul>
                         </div>
@@ -155,8 +167,16 @@
                                 <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab3">
                                     <!-- Tab Content Text -->
                                     <div class="tab-content-text">
-                                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata. Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-                                        <p>sanctus est Lorem ipsum dolor sit amet ipsumlor eut consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore et dolore magna liquyam erat.</p>
+                                        <div class="parent">
+                                            <div class="child">
+                                                <p>朋友，欢迎敲开麦迪讯的门，这里有温暖的火炉、可口的饭菜，醇香的热酒还有一大群愿意和你促膝谈心的思考者。从这里，一场场观点的交锋，一篇篇犀利的文章将飞向世界的每个角落，在墙内墙外，中国和美国之间的太平洋上架起一道讯息的桥梁。</p>
+                                                <p>麦迪讯通讯社由威斯康辛大学麦迪逊分校的一群中国留学生创建，我们不愿意当纯粹的“做题家”，在这个常年冰天雪地的小城，我们开始思考一些比较大的问题：我们究竟为什么来美国？这个国家和中国有什么异同之处？我如何能让美国人（中国人）更好地了解中国（美国）？在无知的成本越来越低的时代，我们该如何让自己和身边的人冷静地看待这个世界的变化，并且使得这些变化给每个人带来心智上的成熟而不是退化？</p>
+                                                <p>我们不想停留在感慨的阶段，我们决定办一个小小的通讯社，从报道每天的新闻做起，在实践中去探寻那些宏大问题的答案。渐渐地，开始有人支持我们的事业，我们也不满足于做新闻的搬运工，而是渴望成为思想的传播者，搭建起一个自由的公民讨论平台。</p>
+                                                <p>做新闻的体验就像一场海上冒险。我们身处一个发生深刻复杂变化的时代，我们在一个又一个舆论场的漩涡中挣扎着前进，各种各样的信息汇聚成一股股恶浪向我们汹涌扑来，身边随时有人丧失了理智，或者被看不见的大手抓去。我们麦迪讯这艘小船在各种虚假的信息和极端的情绪中颠簸，把领航灯高高挂起。面对亮得扎眼真相，很多人选择扭过头去，可我们还是要大声疾呼：看，真相在那里呢！你们好歹看一眼啊！当然，有的时候过分的执着是徒劳无功的，我们碰了很多次南墙，在一个夜里，我把我的一篇并不算激烈的评论修改了二十多遍，但无一例外以“违反有关规定”无法发出，我终于知道，有的时候成就深刻思想，不光要看自己的努力，还要看历史的机遇（审查员是否在打瞌睡）。</p>
+                                                <p>终于，我们不用和这堵墙死磕了，我们有了自己的网站。在这个网站上，我们将为大家呈现更加多元的麦迪逊本地和世界新闻，鼓励更加坦率的观点交流。请各位用一种更加开放的心态去浏览它。因为我们不仅仅要摧毁有形的墙，还要摧毁制约我们思考的“头脑中的墙”。我们不能再用自我审查的方式去观察这个世界了。当自由掌握在你手上的时候，要认真地使用它。</p>
+                                                <p>如果你觉得我们的新闻和评论有可取之处，并且愿意和我们进一步交流看法的话，请在我们的评论区留言。如果你愿意加入我们的事业，那我可以向你保证，你将会有最好的工作体验，因为你的同仁们都是一批涉世未深的年轻人，他们还不太懂得人情世故和尔虞我诈，这些人真诚地希望从彼此的身上学习到一些优点，并渴望寻找到在未来的人生的道路上可以合作的伙伴。所以，如果你恰好也是这样一位“真心英雄”，请加入我们的行列吧，麦迪讯唯一不缺的就是“实在”。</p>
+                                            </div>
+                                        </div>
                                         <!--a href="#" class="btn uza-btn mt-30">Get In Touch</a -->
                                     </div>
                                 </div>
@@ -224,7 +244,18 @@
             <div class="row">
                 <!-- Team Member Slides -->
                 <div class="team-sildes owl-carousel">
-
+                    
+                    <!-- Single Team Slide -->
+                    <div class="single-team-slide">
+                        <img src="./img/members-img/ylh.jpg" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h6>社长、编辑</h6>
+                            <h4>袁立豪</h4>
+                            <p>大四历史系，麦迪讯社长，负责协调各部门的工作，重点负责编辑新闻评论，撰写社论。 不入流的文人，读过几本大书，烧得几个小菜，最爱携有志之士共聚一堂，略备酒菜，纵论天下事，故称“红炉主人”。本人性格耿直随和，好相处，唯撰文，治史时最讲认真。我的人生信条是：前事不忘后事师，怎忍青史尽成灰。</p>
+                        </div>
+                    </div>
+                    
                     <!-- Single Team Slide -->
                     <div class="single-team-slide">
                         <img src="./img/members-img/wxl.jpg" alt="">
@@ -288,25 +319,6 @@
                             <h6>技术</h6>
                             <h4>郭晨晓 Atlas</h4>
                             <p>郭晨晓（Atlas），字元曦，UW地理学系博士生，喜欢用地图的思维来思考问题。爱好地图收集、篆刻与中西文书法、古琴、爱尔兰音乐 :)</p>
-                        </div>
-                    </div>
-
-                    <!-- Single Team Slide -->
-                    <div class="single-team-slide">
-                        <img src="./img/bg-img/20.jpg" alt="">
-                        <!-- Overlay Effect -->
-                        <div class="overlay-effect">
-                            <h6>DESIGNER</h6>
-                            <h4>Roger Black</h4>
-                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est.</p>
-                        </div>
-                        <!-- Social Info -->
-                        <div class="team-social-info">
-                            <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
-                            <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i class="fa fa-youtube-play"></i></a>
                         </div>
                     </div>
 
