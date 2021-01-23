@@ -4,11 +4,19 @@
 <script type="text/javascript">
 
 	function js_method_hide() {
-		document.getElementById("img_group2").style.display='none';
+		var var_club_img=document.getElementById("club_img");
+        var_club_img.style.display='none';
+        var_club_img.className="col-0 col-lg-0";
+        var var_club_info=document.getElementById("club_info");
+        var_club_info.className="col-24 col-lg-12";
 	}
 	
 	function js_method_show() {
-		document.getElementById("img_group2").style.display='inline';
+        var var_club_img=document.getElementById("club_img");
+        var_club_img.style.display='inline';
+        var_club_img.className="col-12 col-lg-6";
+        var var_club_info=document.getElementById("club_info");
+        var_club_info.className="col-12 col-lg-6";
 	}
 	
 </script>
@@ -112,7 +120,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <!-- About Thumbnail -->
-                <div class="col-12 col-lg-6">
+                <div id="club_img" class="col-12 col-lg-6">
                     <div class="about-us-thumbnail mb-80">
                         <!--img src="./img/bg-img/2.jpg" alt="" -->
                         <!-- Video Area -->
@@ -125,7 +133,7 @@
                 </div>
 
                 <!-- About Us Content -->
-                <div class="col-12 col-lg-6">
+                <div id="club_info" class="col-12 col-lg-6">
                     <div class="section-heading mb-5">
                         <h2>社团介绍 Introduction</h2>
                     </div>
@@ -253,6 +261,17 @@
                             <h6>社长、编辑</h6>
                             <h4>袁立豪</h4>
                             <p>大四历史系，麦迪讯社长，负责协调各部门的工作，重点负责编辑新闻评论，撰写社论。 不入流的文人，读过几本大书，烧得几个小菜，最爱携有志之士共聚一堂，略备酒菜，纵论天下事，故称“红炉主人”。本人性格耿直随和，好相处，唯撰文，治史时最讲认真。我的人生信条是：前事不忘后事师，怎忍青史尽成灰。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Single Team Slide -->
+                    <div class="single-team-slide">
+                        <img src="./img/members-img/twz.jpg" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h6>编辑</h6>
+                            <h4>滕文哲</h4>
+                            <p>来自杭州，历史和经济专业，编辑部成员，负责专栏写作和新闻收集。</p>
                         </div>
                     </div>
                     
